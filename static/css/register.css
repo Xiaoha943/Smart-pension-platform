@@ -1,0 +1,16 @@
+body{
+    background-image:url(../img/bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.form{
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 450px;
+    margin: 100px auto;
+    background-color: white;
+}
+.form-horizontal{
+    margin-top: 80px;
+}

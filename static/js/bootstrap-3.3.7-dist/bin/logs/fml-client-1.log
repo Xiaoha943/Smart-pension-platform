@@ -1,0 +1,37 @@
+[10:19:48] [main/INFO] [FML/]: Forge Mod Loader version 7.2.217.1147 for Minecraft 1.7.2 loading
+[10:19:48] [main/INFO] [FML/]: Java is Java HotSpot(TM) Client VM, version 1.6.0_10-rc2, running on Windows Vista:x86:6.2, installed at E:
+[10:19:48] [main/DEBUG] [FML/]: Java classpath at launch is G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\cc\skinme\1.7.2\1.0.0\1.7.2-1.0.0.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\net\minecraftforge\forge\1.7.2-10.12.2.1147\forge-1.7.2-10.12.2.1147.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\net\minecraft\launchwrapper\1.9\launchwrapper-1.9.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\ow2\asm\asm-all\4.1\asm-all-4.1.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\scala-lang\scala-library\2.10.2\scala-library-2.10.2.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\scala-lang\scala-compiler\2.10.2\scala-compiler-2.10.2.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\java3d\vecmath\1.3.1\vecmath-1.3.1.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\net\sf\trove4j\trove4j\3.0.3\trove4j-3.0.3.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\ibm\icu\icu4j-core-mojang\51.2\icu4j-core-mojang-51.2.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\net\sf\jopt-simple\jopt-simple\4.5\jopt-simple-4.5.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\lzma\lzma\0.0.1\lzma-0.0.1.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\paulscode\codecjorbis\20101023\codecjorbis-20101023.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\paulscode\codecwav\20101023\codecwav-20101023.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\paulscode\libraryjavasound\20101123\libraryjavasound-20101123.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\paulscode\librarylwjglopenal\20100824\librarylwjglopenal-20100824.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\paulscode\soundsystem\20120107\soundsystem-20120107.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\io\netty\netty-all\4.0.10.Final\netty-all-4.0.10.Final.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\google\guava\guava\15.0\guava-15.0.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\apache\commons\commons-lang3\3.1\commons-lang3-3.1.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\commons-io\commons-io\2.4\commons-io-2.4.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\net\java\jinput\jinput\2.0.5\jinput-2.0.5.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\net\java\jutils\jutils\1.0.0\jutils-1.0.0.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\com\mojang\authlib\1.3\authlib-1.3.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\apache\logging\log4j\log4j-api\2.0-beta9\log4j-api-2.0-beta9.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\apache\logging\log4j\log4j-core\2.0-beta9\log4j-core-2.0-beta9.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.0\lwjgl-2.9.0.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.0\lwjgl_util-2.9.0.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl\2.9.1-nightly-20131017\lwjgl-2.9.1-nightly-20131017.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\libraries\org\lwjgl\lwjgl\lwjgl_util\2.9.1-nightly-20131017\lwjgl_util-2.9.1-nightly-20131017.jar;G:\game\我tm穿着校服拽天下发布的牛Bmc\.minecraft\versions\1.7.2-Forge10.12.2.1147\1.7.2-Forge10.12.2.1147.jar
+[10:19:48] [main/DEBUG] [FML/]: Java library path at launch is .minecraft\natives
+[10:19:48] [main/DEBUG] [FML/]: Enabling runtime deobfuscation
+[10:19:48] [main/DEBUG] [FML/]: Instantiating coremod class FMLCorePlugin
+[10:19:48] [main/DEBUG] [FML/]: Added access transformer class cpw.mods.fml.common.asm.transformers.AccessTransformer to enqueued access transformers
+[10:19:48] [main/DEBUG] [FML/]: Enqueued coremod FMLCorePlugin
+[10:19:48] [main/DEBUG] [FML/]: Instantiating coremod class FMLForgePlugin
+[10:19:48] [main/DEBUG] [FML/]: Added access transformer class net.minecraftforge.transformers.ForgeAccessTransformer to enqueued access transformers
+[10:19:48] [main/DEBUG] [FML/]: Enqueued coremod FMLForgePlugin
+[10:19:48] [main/DEBUG] [FML/]: All fundamental core mods are successfully located
+[10:19:48] [main/DEBUG] [FML/]: Discovering coremods
+[10:19:48] [main/ERROR] [FML/]: An error occurred trying to configure the minecraft home at E:\bin\.minecraft for Forge Mod Loader
+java.lang.NullPointerException
+	at java.util.Arrays.sort(Unknown Source) ~[?:1.6.0_10-rc2]
+	at cpw.mods.fml.relauncher.FileListHelper.sortFileList(FileListHelper.java:21) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.CoreModManager.discoverCoreMods(CoreModManager.java:237) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:214) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:90) [forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:67) [forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:34) [forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:124) [forge-1.7.2-10.12.2.1147.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:114) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]
+[10:19:48] [main/ERROR] [LaunchWrapper/]: Unable to launch
+java.lang.NullPointerException
+	at java.util.Arrays.sort(Unknown Source) ~[?:1.6.0_10-rc2]
+	at cpw.mods.fml.relauncher.FileListHelper.sortFileList(FileListHelper.java:21) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.CoreModManager.discoverCoreMods(CoreModManager.java:237) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.CoreModManager.handleLaunch(CoreModManager.java:214) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupHome(FMLLaunchHandler.java:90) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.setupClient(FMLLaunchHandler.java:67) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.relauncher.FMLLaunchHandler.configureForClientLaunch(FMLLaunchHandler.java:34) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at cpw.mods.fml.common.launcher.FMLTweaker.injectIntoClassLoader(FMLTweaker.java:124) ~[forge-1.7.2-10.12.2.1147.jar:?]
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:114) [launchwrapper-1.9.jar:?]
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28) [launchwrapper-1.9.jar:?]

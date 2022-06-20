@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/js/responsiveslides.min.js">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script src="/js/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/iconfont.css">
+</head>
+
+<body>
+    <!-- 登录栏 -->
+    <div class="hdtop">
+        <div class="contain">
+            <%if(flag==1){%>
+            <%if(qx[0].qx==0){%>
+            <p class='p1'>欢迎管理员<%=username[0].username%>登录</p>
+            <a class='inback' href='/admin'>进入后台</a>
+            <%} else if (qx[0].qx == 2) {%>
+            <p class='p1'>欢迎vip<%=username%>登录</p>
+            <% } else if (qx[0].qx== 1) {%>
+            <p class='p1'>欢迎用户<%=username[0].username%>登录</p>
+            <%}%>
+                    <a class='return'href='/logout'>注销</a>
+                    <%}else{%>
+            <a class='register' href='/login'>请登录</a>
+            <%}%>
+                <a class="return" href="/main">首页</a>
+            <div class="iconfont_right">
+                <span class="iconfont icongouwuche1"><a href="/shopcar">购物车</a></span>
+                <span class='shopcar_num'><span class='num'>4</span></span>
+            </div>
+
+        </div>
+    </div>
+    <!-- 栏目 -->
+    <div class="container">
+        <div id="shopcar_title">
+            <ul class="title_order">
+                <li class="li1">订单详情</li>
+                <li class="li1">收货人地址</li>
+                <li class="li1">金额</li>
+                <li class="li1">操作</li>
+            </ul>
+        </div>
+        <!-- 购物车商品栏 -->
+        <div class="shopcar_content">
+            <%if(data.length!=0){%>
+            <%data.forEach((v)=>{%>
+            <div class='shopcar_style'>
+                <img class='shopcar_img' src='/img/<%=v.img%>'>
+                <div class='shopcar_last'>
+                    <p class='shopcar_gname'><%=v.gname%></p>
+                    <p class='shopcar_des order_des'><%=v.des%></p>
+                    <p class='order_address'><%=v.address%></p>
+                    <p class='shopcar_price'><%=v.price%></p>
+                    <p class='shopcar_gid'><%=v.gid%></p>
+                    <div class='reduce'>
+                        <a href='#'><span class='glyphicon glyphicon-minus'></span></a>
+                        <input type='text' value=<%=v.count%> class='shopcarsum'></input>
+                        <a href='#'><span class='glyphicon glyphicon-plus'></span></a>
+                    </div>
+                    <a class='delete' href='../server/deleteorder_server.php?gid=" . $rows2[' gid'] . "'>取消订单</a>
+        </div>
+    </div>
+    <%})%>
+    <%}%>
+    <div class='foot_bar'>
+        <ul class='foot_content'>
+            <li></li>
+            <li></li>
+            <li class='foot_price foot_order'>总价:<span class='foot_input'>100</span></li>
+            <li class='foot_sum'><a href='#'>提交订单</a></li>
+        </ul>
+    </div>
+        
+        </div>
+        <div class=" code">
+                        <img src="/img/2dcode.jpg" alt="">
+                </div>
+            </div>
+
+</body>
+<script>
+    $('.foot_sum>a').click(function () {
+        console.log('111');
+        $('.code').css({
+            "display": "block"
+        })
+        $('.code').click(function () {
+            $('.code').css({
+                "display": "none"
+            })
+        })
+    })
+</script>
+
+</html>

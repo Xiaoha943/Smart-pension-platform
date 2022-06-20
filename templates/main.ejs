@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的商城</title>
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=PPuFex6dQHXEVTCO3B32GvPIG4MAIjtd">
+    </script>
+    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/message.css">
+    <link rel="stylesheet" href="/css/iconfont.css">
+</head>
+
+<style>
+    [type="submit"]{
+        border: none;
+    }
+</style>
+<body>
+    <!-- 登录栏 -->
+    <div id="top"></div>
+    <div class="hdtop">
+        <div class="contain">
+            <%if(flag==1){%>
+            <%if(qx[0].qx==0){%>
+            <p class='p1'>欢迎管理员<%=username[0].username%>登录</p>
+            <a class='inback' href='/admin'>进入后台</a>
+            <%} else if (qx[0].qx == 2) {%>
+            <p class='p1'>欢迎vip<%=username%>登录</p>
+            <% } else if (qx[0].qx== 1) {%>
+            <p class='p1'>欢迎用户<%=username[0].username%>登录</p>
+            <%}%>
+                    <a class='return'href='/logout'>注销</a>
+                    <div id='address'>
+                        <p><span id='province'></span></p>
+                        <p><span id='city'></span></p>
+                        <p><span id='detail'></span></p>
+                    </div>
+                    <%}else{%>
+            <a class='register' href='/login'>请登录</a>
+            <%}%>
+            <div class="iconfont_right">
+                <!-- 获取购物车商品数量 -->
+                <span class="iconfont icongouwuche1"><a href="/shopcar">购物车</a></span>
+                    <div class='shopcar_num'><span class='num'><%=sum.count%></span></div>
+        <a href='/shopcar'>
+            <ul class='shopcar-box'>
+                <li><span class='iconfont icongouwucheman'></span></li>
+                <li>购</li>
+                <li>物</li>
+                <li>车</li>
+                <li><%=sum.count%></li>
+            </ul>
+        </a>
+        <span class="iconfont icon5"><a href="/order">订单管理</a></span>
+    </div>
+
+    </div>
+    </div>
+    <!-- 搜索框 -->
+    <div class="message_box">
+        <div class="search">
+            <form action="" method="post">
+                <input type="text" name="gname" placeholder="输入关键词" />
+                <a class="buttom" href="javascript:">搜索<button type="submit">搜索</button></a>
+            </form>
+        </div>
+        <div class="button_box">
+            <button class="shopbuttom"><span></span><a href="/index">养生资讯</a></button>
+        </div>
+    </div>
+    <!-- <input type="text"><button>搜索</button> -->
+    <!-- 类别导航栏 -->
+    <ul class="ul1">
+        <%if(type.length!=0){%>
+        <%type.forEach((v)=>{%>
+        <li>
+            <a href='/main/<%=v.tid%>'><%=v.tname%></a>
+        </li>
+        <%})%>
+        <%}%>
+    </ul>
+    <!-- 顶部 -->
+    
+    <!-- 轮播图 -->
+    <div class="main_image">
+        <div class="img-box">
+            <img src="/img/banner.jpg" alt="">
+            <img src="/img/banner.jpg" alt="">
+            <!-- <img src="./img/messagelook/01.jpg" alt="">
+            <img src="./img/messagelook/02.jpg" alt="">
+            <img src="./img/messagelook/03.jpg" alt=""> -->
+        </div>
+    </div>
+    <!-- 商品content -->
+
+    <!-- 商品界面 养生  id=1 -->
+    <div class="div5">
+        <div class="goods_form book">
+            <%if(data.length!=0){%>
+        <%data.forEach((v)=>{%>
+        <div class='goods'>
+            <img class='goods_img' src='/img/<%=v.img%>'>
+            <h3 class='titl'><%=v.gname%></h3>
+            <p class='goods_des'><%=v.des%></p>
+            <span class='price'>价格：<%=v.price%></span>
+            <span class='vipprice'>会员价：<%=v.vprice%></span>
+            <div class='shop_car'>
+                <div class='car'><a href='/addGoods/<%=v.gid%>'>加购物车</a></div>
+                <div class='shop_button car'><a href='./server/addorder_server.php?id=".$rows['
+                        tid']."&gid=" . $rows['gid'] . "''>直接购买</a></div>
+            </div>
+        </div>
+        <%})%>
+        <%}%>
+
+    </div>
+</div>
+    <div><a href="#top" id="top"><span class="iconfont iconhuidaodingbu"></span></a></div>
+    <div class="footer">
+   
+
+        <div class="wrap">
+
+        </div>
+    </div>
+</body>
+    <script>
+         // 百度地图API功能
+    var geolocation = new BMap.Geolocation();
+    geolocation.getCurrentPosition(function (r) {
+        if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+            console.log(r.point.lng + "__" + r.point.lat);
+            getAddress(r.point.lng, r.point.lat);
+        }
+        else {
+            alert('failed' + this.getStatus());
+        }
+    }, { enableHighAccuracy: true })
+    //关于状态码
+    //BMAP_STATUS_SUCCESS	检索成功。对应数值“0”。
+    //BMAP_STATUS_CITY_LIST	城市列表。对应数值“1”。
+    //BMAP_STATUS_UNKNOWN_LOCATION	位置结果未知。对应数值“2”。
+    //BMAP_STATUS_UNKNOWN_ROUTE	导航结果未知。对应数值“3”。
+    //BMAP_STATUS_INVALID_KEY	非法密钥。对应数值“4”。
+    //BMAP_STATUS_INVALID_REQUEST	非法请求。对应数值“5”。
+    //BMAP_STATUS_PERMISSION_DENIED	没有权限。对应数值“6”。(自 1.1 新增)
+    //BMAP_STATUS_SERVICE_UNAVAILABLE	服务不可用。对应数值“7”。(自 1.1 新增)
+    //BMAP_STATUS_TIMEOUT	超时。对应数值“8”。(自 1.1 新增)
+    //通过经纬度获取地址信息
+    function getAddress(lng, lat) {
+        var myGeo = new BMap.Geocoder();
+        // 根据坐标得到地址描述    
+        myGeo.getLocation(new BMap.Point(lng, lat), function (result) {
+            if (result) {
+                var province = result.addressComponents.province;
+                var city = result.addressComponents.city;
+                var detail = result.address;
+                console.log(province)
+                console.log(city)
+                document.getElementById("province").innerText = province;
+                document.getElementById("city").innerText = city;
+                document.getElementById("detail").innerText = detail;
+            }
+        });
+    }
+    </script>
+
+</html>

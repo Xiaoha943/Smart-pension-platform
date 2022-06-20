@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/js/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <script src="/js/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="/css/admin.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="page-header">
+            <h2 class="text-center text-primary">用户信息管理</h2>
+        </div>
+        <%data.forEach((v)=>{%>
+        <div class="updata-box">
+            <form class="form-horizontal" role="form" action="/updateGoods/<%=v.gid%>" method="post">
+                <div class="form-group" id="first">
+                    <label for="firstname" class="col-lg-3 control-label">商品id</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="gid" id="firstname" value="<%=v.gid%>"><span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="firstname" class="col-lg-3 control-label">商品名</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="gname" id="firstname" value="<%=v.gname%>"><span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-lg-3 control-label">价格</label>
+                    <div class="col-lg-6">
+                        <input type="text" class="form-control" name="price" id="lastname" value="<%=v.price%>"><span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-lg-3 control-label">vip价格</label>
+                    <div class="col-lg-6">
+                        <input type="tel" class="form-control" name="vprice" id="lastname" value="<%=v.vprice%>"><span></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-lg-3 control-label">图片</label>
+                    <div class="col-lg-6">
+                        <input type="text" required class="form-control" name="img" id="lastname" value="<%=v.img%>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-lg-3 control-label">描述</label>
+                    <div class="col-lg-6">
+                        <input type="text" required class="form-control" name="des" id="lastname" value="<%=v.des%>">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="lastname" class="col-lg-3 control-label">商品类型</label>
+                    <div class="col-lg-6">
+                        <input type="text" required class="form-control" name="tid" id="lastname" value="<%=v.tid%>">
+                    </div>
+                </div>
+                <div class="btn-box"><button type="submit"  class="btn-primary" id="take">提交</button></div>
+            </form>
+        </div>
+        <%})%>
+
+    </div>
+</body>
+<script src="../../js/jquery.js"></script>
+<script src="../../bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<script>
+  
+</script>
+
+</html>

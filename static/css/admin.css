@@ -1,0 +1,35 @@
+.container-fluid{
+    position: relative;
+}
+
+.updata-box{
+    /* border: 1px solid red; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* display: none; */
+    
+}
+.form-horizontal{
+    margin-top: 90px;
+    }
+.btn-box{
+    text-align: center;
+
+}
+.btn-primary{
+
+}
+#take{
+    border: none;
+    width: 89px;
+    height: 39px;
+    font-size: 18px;
+    
+}
+#first{
+    display: none;
+}
